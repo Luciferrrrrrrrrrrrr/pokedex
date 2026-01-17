@@ -9,8 +9,6 @@ import {
 
 } from "react-native";
 
-const [Loading ,setLoading ] = useState(true);
-
 interface PokemonType {
   type: {
     name: string;
@@ -54,8 +52,10 @@ const colorByType: Record<string, string> = {
 };
 
 export default function Details() {
+
   const { name } = useLocalSearchParams<{ name: string }>();
   const [pokemon, setPokemon] = useState<PokemonDetails | null>(null);
+  const [loading ,setLoading ] = useState(true);
 
   useEffect(() => {
     if (name) fetchPokemonByName(name);
@@ -63,10 +63,9 @@ export default function Details() {
 
   async function fetchPokemonByName(pokemonName: string) {
     
-
     try {
 
-        
+      setLoading(true);  
       const res = await fetch(
         `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
       );
@@ -74,6 +73,8 @@ export default function Details() {
       setPokemon(data);
     } catch (error) {
       console.log(error);
+    } finally {
+        setLoading(false);
     }
   }
 
