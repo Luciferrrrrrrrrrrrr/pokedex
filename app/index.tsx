@@ -102,6 +102,7 @@ export default function Index() {
         >
           <View  >
             <Text style={styles.name}>{pokemon.name}</Text>
+           
             <Text style={styles.type}>{pokemon.types[0].type.name}</Text>
             <View style={{
               flexDirection: 'row' 
