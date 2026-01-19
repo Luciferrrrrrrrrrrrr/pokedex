@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# 📱 Pokédex App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern Pokédex mobile application built with **React Native**, **Expo**, and **TypeScript**, powered by the public **PokéAPI**.
 
-## Get started
+This project focuses on clean UI, type-safe data handling, and real-world API integration, including multi-step fetching and recursive evolution parsing.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- 📋 Pokémon list with sprites and types
+- 🔍 Detailed Pokémon view with:
+  - Info, Stats, and Moves tabs
+  - Type-colored stat bars
+  - Abilities list
+  - Evolution chain with sprites & arrows
+- 🧬 Recursive evolution chain parsing
+- ⏳ Skeleton loading states
+- 🎨 Dynamic theming based on Pokémon type
+- ⚡ Fast and responsive UI
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- React Native
+- Expo Router
+- TypeScript
+- PokéAPI
+- Functional Components & Hooks
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🧠 What I Learned
 
-When you're ready, run:
+- Handling complex REST API responses
+- Recursive data traversal (evolution chains)
+- Component-based UI architecture
+- Type-safe API integration
+- Improving UX with skeleton loaders and visual hierarchy
+
+---
+
+## ▶️ Running the App Locally
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/Luciferrrrrrrrrrrrr/pokedex.git
+cd pokedex
+npm install
+npx expo start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
