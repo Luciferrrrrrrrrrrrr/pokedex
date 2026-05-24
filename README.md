@@ -1,5 +1,10 @@
 # 📱 Pokédex App (React Native + Expo)
 
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![PokéAPI](https://img.shields.io/badge/PokéAPI-EF5350?style=flat&logoColor=white)
+
 A modern Pokédex mobile application built with **React Native**, **Expo**, and **TypeScript**, powered by the public **PokéAPI**.
 
 This project focuses on clean UI, type-safe data handling, and real-world API integration, including multi-step fetching and recursive evolution parsing.
@@ -44,7 +49,7 @@ This project focuses on clean UI, type-safe data handling, and real-world API in
 ## ▶️ Running the App Locally
 
 ```bash
-git clone https://github.com/Luciferrrrrrrrrrrrr/pokedex.git
+git clone https://github.com/biswajeetdev/pokedex.git
 cd pokedex
 npm install
 npx expo start
